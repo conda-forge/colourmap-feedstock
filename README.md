@@ -1,11 +1,11 @@
-About colourmap
-===============
+About colourmap-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/colourmap-feedstock/blob/main/LICENSE.txt)
 
 Home: https://erdogant.github.io/colourmap
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/colourmap-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python package colourmap generates an N unique colors from the specified input colormap.
 
