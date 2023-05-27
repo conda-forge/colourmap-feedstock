@@ -1,5 +1,5 @@
 {% set name = "colourmap" %}
-{% set version = "1.1.11" %}
+{% set version = "1.1.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/colourmap-{{ version }}.tar.gz
-  sha256: 5578239c9b1853c0a81d317d1fa524e3ccf60525c3262a658d86f11e1bb997ae
+  sha256: d6213c8252adaa7582075e43dc57b1432c8733c208f6e9affb913b8e05861514
 
 build:
   noarch: python
