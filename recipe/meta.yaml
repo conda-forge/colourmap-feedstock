@@ -22,9 +22,11 @@ requirements:
     - pip
     - python {{ python_min }}
     - setuptools
+    - wheel
   run:
-    - matplotlib-base >=3.10
+    - matplotlib-base
     - numpy
+    - scipy
     - python >={{ python_min }}
 
 test:
