@@ -1,5 +1,5 @@
 {% set name = "colourmap" %}
-{% set version = "1.1.21" %}
+{% set version = "1.2.0" %}
 
 # Not set upstream but need this to be compatible with matplotlib >=3.10
 {% set python_min = "3.10" %}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/colourmap-{{ version }}.tar.gz
-  sha256: 5db8c7504ecf1d0ac2851f8f5054b831091dcd66b087391da743a5077bcea331
+  sha256: 29eda4457859d30cf5da024566cb05ba278f3905bd25167b1d725b57abe2e9ce
 
 build:
   noarch: python
