@@ -1,0 +1,50 @@
+# Not set upstream but need this to be compatible with matplotlib >=3.10
+schema_version: 1
+
+context:
+  name: colourmap
+  version: 1.2.0
+  python_min: 3.10
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/colourmap-${{ version }}.tar.gz
+  sha256: 29eda4457859d30cf5da024566cb05ba278f3905bd25167b1d725b57abe2e9ce
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+    - wheel
+  run:
+    - matplotlib-base
+    - numpy
+    - scipy
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - colourmap
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+about:
+  summary: Python package colourmap generates an N unique colors from the specified input colormap.
+  license: MIT
+  license_file: LICENSE
+  homepage: https://erdogant.github.io/colourmap
+  repository: https://github.com/erdogant/colourmap/
+
+extra:
+  recipe-maintainers:
+    - thewchan
