@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: colourmap
-  version: "1.2.1"
+  version: "1.2.3"
   python_min: 3.10
 
 package:
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/colourmap-${{ version }}.tar.gz
-  sha256: 86b614f458b301145e52f5aaf6f270911021eeb6170a42ce3354b2c5b70e3cf1
+  sha256: 3732dedfe86902b7a1b25eb56c63f74b4f683e1c6341f5f6888bc7342ba50b99
 
 build:
   number: 0
